@@ -59,28 +59,4 @@ class Excel_export extends CI_Controller
         readfile($file_path);
         unlink($file_path); // Clean up the temporary file
     }
-
-    public function downloadPDF()
-    {
-        require_once(APPPATH . 'helpers/tcpdf/tcpdf.php');
-        // create new PDF document
-        $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
-        $pdf->setTitle('Dynamin PDF');
-
-        $pdf->AddPage();
-        //write code
-
-        $html = '<h1>TCPDF</h1>';
-        $html .= '<table id="employeeTable" class="table table-striped w-100%">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Address</th>
-                <th>Gender</th>
-                <th>Designation</th>
-                <th>Age</th>
-            </tr>
-        </thead>
-        <tbody>';
-    }
 }
