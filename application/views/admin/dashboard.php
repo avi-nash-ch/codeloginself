@@ -27,8 +27,7 @@
                     <a href="#" style="text-decoration: none;" >Good bye...</a>
                     </p>
                     <a href="<?= base_url('Excel_export') ?>" class="btn btn-primary">Excel_export</a>
-                    <a href="<?= base_url('Excel_import') ?>" class="btn btn-secondary mt-2">Excel_import</a>
-                    <!-- <a href="<?= base_url('Receipt/generatePDF') ?>" class="btn btn-dark mt-2 text-white">Pdf_generation</a> -->
+                    <a href="<?= base_url('Excel_import') ?>" class="btn btn-secondary mt-2">Excel_import</a> 
                 </div>
                 
             </div>

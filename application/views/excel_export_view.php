@@ -44,12 +44,11 @@
                     <div class="text-center">
                         <form action="<?= base_url('Excel_export/action') ?> " method="post">
                             <input type="submit" name="export" class="btn btn-success" value="Export">
-                            <a href="<?= base_url('Admin/dashboard') ?>" class="btn btn-info">Download PDF</a>
+                            <!-- <a href="<?= base_url('Admin/dashboard') ?>" class="btn btn-info">Download PDF</a> -->
                             <a href="<?= base_url('Admin/dashboard') ?>" target = "_blank" class="btn btn-secondary">Back</a>
                             
                         </form>
                     </div>
-                    
                     <br><br>
                 </div>
             </div>
